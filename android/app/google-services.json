@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "74878827502",
+    "project_id": "gemstore-5f5a8",
+    "storage_bucket": "gemstore-5f5a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74878827502:android:2d98979f9bf13b78a9ecff",
+        "android_client_info": {
+          "package_name": "com.example.gemshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "74878827502-dncgo2sbqrem0iri60ealkd3qia60vnm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwP-JFp39t57kMZ0FcuBRKKgTGXbPDQl4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "74878827502-dncgo2sbqrem0iri60ealkd3qia60vnm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "74878827502-e23cqrncjpbtbk77jqqolanosg8oujrs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.gemshop.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

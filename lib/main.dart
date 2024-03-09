@@ -1,7 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:gemshop/firebase_options.dart';
 import 'screens/intro.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'screens/changePass.dart';
+import 'screens/home.dart';
 
-void main() {
+// void main() {
+//   runApp(GemShop());
+// }
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(GemShop());
 }
 
@@ -13,6 +25,8 @@ class GemShop extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/intro': (context) => IntroPage(),
+        '/changePass': (context) => PassChane(),
+        '/home': (context) => HomePage(),
       },
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -108,3 +122,42 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+////////////////
+/////////////////
+// import 'package:firebase_core/firebase_core.dart';
+// import 'package:flutter/material.dart';
+// import 'package:gemshop/firebase_options.dart';
+// import './screens/firebaseExample/home.dart';
+// import './screens/firebaseExample/login.dart';
+// import './screens/firebaseExample/register.dart';
+// import './screens/firebaseExample/logout.dart';
+
+// Future<void> main() async {
+//   WidgetsFlutterBinding.ensureInitialized();
+//   await Firebase.initializeApp(
+//     options: DefaultFirebaseOptions.currentPlatform,
+//   );
+//   runApp(MyApp());
+// }
+// // void main() {
+// //   runApp(MyApp());
+// // }
+
+// class MyApp extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Flutter Firebase Auth',
+//       theme: ThemeData(
+//         primarySwatch: Colors.blue,
+//       ),
+//       initialRoute: '/',
+//       routes: {
+//         '/': (context) => MainScreen(),
+//         '/login': (context) => LoginScreen(),
+//         '/register': (context) => RegisterScreen(),
+//         '/home': (context) => HomeScreen(),
+//       },
+//     );
+//   }
+// }

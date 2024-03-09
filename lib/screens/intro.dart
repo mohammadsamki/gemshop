@@ -51,7 +51,9 @@ class _IntroPageState extends State<IntroPage> {
                         backgroundColor: Color.fromARGB(255, 116, 115, 115),
                         // onPrimary: Colors.white,
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/home');
+                      },
                       child: Text('Shopping now',
                           style: TextStyle(color: Colors.white)),
                     ),

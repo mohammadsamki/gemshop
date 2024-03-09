@@ -1,3 +1,5 @@
 {
-    "vscode-corda.isCordaProject": false
+    "vscode-corda.isCordaProject": false,
+    "cmake.sourceDirectory": "/Users/macbookair/Desktop/dart 006 /gemshop/linux",
+    "java.configuration.updateBuildConfiguration": "interactive"
 }
