@@ -131,6 +131,8 @@ class _MyHomePageState extends State<MyHomePage> {
 // import './screens/firebaseExample/login.dart';
 // import './screens/firebaseExample/register.dart';
 // import './screens/firebaseExample/logout.dart';
+// import './screens/firebaseExample/fireStromeScreen.dart';
+// import 'screens/firebaseExample/api.dart';
 
 // Future<void> main() async {
 //   WidgetsFlutterBinding.ensureInitialized();
@@ -151,12 +153,14 @@ class _MyHomePageState extends State<MyHomePage> {
 //       theme: ThemeData(
 //         primarySwatch: Colors.blue,
 //       ),
-//       initialRoute: '/',
+//       initialRoute: '/api',
 //       routes: {
 //         '/': (context) => MainScreen(),
+//         '/api': (context) => DataFromApi(),
 //         '/login': (context) => LoginScreen(),
 //         '/register': (context) => RegisterScreen(),
 //         '/home': (context) => HomeScreen(),
+//         '/fireStromeScreen': (context) => FireStormScreen(),
 //       },
 //     );
 //   }
